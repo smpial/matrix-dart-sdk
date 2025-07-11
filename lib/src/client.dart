@@ -807,14 +807,14 @@ class Client extends MatrixApi {
     if (enableEncryption) {
       initialState ??= [];
       if (!initialState.any((s) => s.type == EventTypes.Encryption)) {
-        initialState.add(
+        /*initialState.add(
           StateEvent(
             content: {
               'algorithm': supportedGroupEncryptionAlgorithms.first,
             },
             type: EventTypes.Encryption,
           ),
-        );
+        );*/
       }
     }
 
@@ -861,14 +861,14 @@ class Client extends MatrixApi {
     if (enableEncryption) {
       initialState ??= [];
       if (!initialState.any((s) => s.type == EventTypes.Encryption)) {
-        initialState.add(
+        /*initialState.add(
           StateEvent(
             content: {
               'algorithm': supportedGroupEncryptionAlgorithms.first,
             },
             type: EventTypes.Encryption,
           ),
-        );
+        );*/
       }
     }
     if (historyVisibility != null) {
